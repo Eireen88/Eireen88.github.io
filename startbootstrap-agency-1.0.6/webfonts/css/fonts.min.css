@@ -9,6 +9,8 @@
 			
 @font-face { font-family: 'ClearSans-Thin'; 
 			src: url('../webfonts/ClearSans-Thin.ttf') format('truetype'); }
+@font-face { font-family: 'ClearSans-Bold'; 
+			src: url('../webfonts/ClearSans-Bold.ttf') format('truetype'); }			
 			
 @font-face { font-family: 'Amatic-Bold'; 
 			src: url('../webfonts/Amatic-Bold.ttf') format('truetype'); }
