@@ -9,7 +9,7 @@ body {
   font-family: "Clear Sans Light", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 .text-muted {
-  color: #777777;
+  color: #333333;
 }
 .text-primary {
   color: #333333;
@@ -29,15 +29,18 @@ a.active {
   outline: none;
 }
 a {
-  color: #777777;
+  color: #388366;
 }
 a:hover,
 a:focus,
 a:active,
 a.active {
-  color: #993366;
+  color: #C6E3D7;
 }
 
+th {
+padding: -3px;	
+}
 h1,
 h2,
 h3 {
@@ -45,7 +48,7 @@ h3 {
   text-transform: uppercase;
   font-weight: 100;
   font-size: 40px;
-  color: #388366;
+  color: #ABC9BE;
 }
 
 h4,
@@ -59,6 +62,42 @@ h6 {
 }
 .img-centered {
   margin: 0 auto;
+  
+
+}
+
+select:required:invalid {
+  color: #777777;
+}
+option[value=""][disabled] {
+  display: none;
+}
+option {
+  color: #333333;
+}
+
+.logo {
+	
+background-image: url('../img/logo_header.jpg');
+  background-repeat: none;
+ 
+ 
+  
+}
+
+.tabwidth {
+margin-left: -2px;
+margin-left: -2px;
+}
+
+.subnav {
+	font-family: "AftaSansThin-Regular", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	width: auto;
+	text-align: left;
+	color: #ABC9BE;
+	background-color: #388366;
+	border-radius: 0px;
+	
 }
 
 .categories {
@@ -73,11 +112,21 @@ h6 {
 	text-align: left;
 	margin-top: -5px;
 	color: #333;
+	background-color: white;
 }
 
 .searchgo {
 	margin-top: 60px;
 	margin-left: 50%;
+}
+
+.visualization {
+margin-top: 20px;	
+}
+
+.hideme
+{
+    opacity:0;
 }
 
 .bg-light-gray {
@@ -192,13 +241,14 @@ fieldset[disabled] .btn-xl.active {
 .navbar-default .navbar-brand {
   color: #fff;
   font-family: "Amatic-Bold", "Helvetica Neue", Helvetica, Arial, cursive;
+ 
   
 }
 .navbar-default .navbar-brand:hover,
 .navbar-default .navbar-brand:focus,
 .navbar-default .navbar-brand:active,
 .navbar-default .navbar-brand.active {
-  color: #9a405a;
+  color: #C6E3D7;
 }
 .navbar-default .navbar-collapse {
   border-color: rgba(255, 255, 255, 0.02);
@@ -234,7 +284,7 @@ fieldset[disabled] .btn-xl.active {
 .navbar-default .navbar-nav > .active > a {
   border-radius: 0;
   color: white;
-  background-color: #abc9be;
+  background-color: #82958D;
 }
 .navbar-default .navbar-nav > .active > a:hover,
 .navbar-default .navbar-nav > .active > a:focus {
@@ -268,7 +318,8 @@ fieldset[disabled] .btn-xl.active {
   }
 }
 header {
-  background-image: url('../img/hintergrund_header.jpg');
+  background-image: url('../img/hintergrund_netz.jpg');
+  height: 74%;
   background-repeat: none;
   background-attachment: scroll;
   background-position: center center;
@@ -280,7 +331,7 @@ header {
   color: white;
 }
 header .intro-text {
-  padding-top: 700px;
+  padding-top: 87.5%px;
 
 .footerimage {
 	background-image: url('../img/hintergrund_header.jpg');
@@ -288,27 +339,28 @@ header .intro-text {
 header .intro-text .intro-lead-in {
   font-family: "Aparijita-Italic", Helvetica, Arial, sans-serif;}
   font-size: 20px;
-  line-height: 20px;
+  line-height: 25px;
   margin-bottom: 20px;
 }
 header .intro-text .intro-heading {
   font-family: "Amatic-Bold", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-style: bold;
   text-transform: uppercase;
-  font-weight: 700;
+  font-weight: 100;
   font-size: 110px;
   line-height: 110px;
+  color: #333;
 }
 @media (min-width: 768px) {
   header .intro-text {
-    padding-top: 375px;
-    padding-bottom: 55px;
+    padding-top: 15.8%;
+    padding-bottom: 6.8%;
   }
   header .intro-text .intro-lead-in {
     font-family: "Aparijita-Italic", "Helvetica Neue", Helvetica, Arial, sans-serif;
-    font-style: italic;
+    
     font-size: 20px;
-    line-height: 20px;
+    line-height: 25px;
     margin-bottom: 30px;
   }
   
@@ -329,7 +381,7 @@ header .intro-text .intro-heading {
     font-family: "Glyphicons Halflings";
     font-style: normal;
     font-weight: 1;
-    line-height: 81px;
+    line-height: 51px;
     position: relative;
     top: 1px;
 }
@@ -615,9 +667,11 @@ section h3.section-subheading {
 aside.clients img {
   margin: 50px auto;
 }
-section#contact {
-  background-color: #222222;
+.contact {
+  background-color: #fff;
   background-image: url('../img/hintergrund_netz.jpg');
+  width: 100%;
+  background-size: 100%;
   background-position: center;
   background-repeat: no-repeat;
 }
