@@ -26,11 +26,13 @@ $('.navbar-collapse ul li a').click(function() {
 });
 
 
+// Open Tooltips by hover the questionmark netx to search categories - manuell hingefügt
 $(document).ready(function(){
     $('[data-toggle="tooltip"]').tooltip();
 });
 
 
+// Fade In the section by scrolling down - manuell hinzugefügt
 $(document).ready(function(){
   
  
@@ -57,4 +59,9 @@ $(document).ready(function(){
   });
 
 
-
+$(document).ready(function(){
+    $(".searchgo").click(function(){
+        $(".noresults").fadeOut()
+    });
+  
+});
